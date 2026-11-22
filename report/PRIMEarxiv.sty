@@ -1,0 +1,64 @@
+% Stand-in for the PRIMEarxiv.sty used by the project idea review (Overleaf "PRIME AI paper"
+% template, itself derived from the arXiv preprint style). It reproduces that layout so the
+% report can be compiled locally; on Overleaf the template's own PRIMEarxiv.sty can be used.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{PRIMEarxiv}[2026/11/22 stand-in for the PRIME AI paper style]
+
+% Times text, Computer Modern math (as in the idea review)
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\sfdefault}{phv}
+
+\RequirePackage[letterpaper]{geometry}
+\AtBeginDocument{\newgeometry{textheight=9in, textwidth=6.5in, top=1in,
+  headheight=14pt, headsep=25pt, footskip=30pt}}
+\widowpenalty=10000
+\clubpenalty=10000
+\flushbottom
+\sloppy
+
+\RequirePackage{fancyhdr}
+\fancyhf{}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyheadoffset{0pt}
+\rhead{\itshape PRIME AI paper}
+\cfoot{\thepage}
+\fancypagestyle{plain}{\fancyhf{}\cfoot{\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+% keywords: \keywords{a \and b}
+\def\keywordname{{\bfseries\emph{Keywords}}}
+\def\keywords#1{\par\addvspace\medskipamount{\rightskip=0pt plus1cm
+  \def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$ }\noindent\keywordname\enspace\ignorespaces#1\par}}
+
+% paragraphs: no indent, space between paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt}
+
+% sections
+\renewcommand{\section}{\@startsection{section}{1}{\z@}%
+  {-2.0ex \@plus -0.5ex \@minus -0.2ex}{1.5ex \@plus 0.3ex \@minus 0.2ex}{\large\bfseries\raggedright}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+  {-1.8ex \@plus -0.5ex \@minus -0.2ex}{0.8ex \@plus 0.2ex}{\normalsize\bfseries\raggedright}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
+  {-1.5ex \@plus -0.5ex \@minus -0.2ex}{0.5ex \@plus 0.2ex}{\normalsize\bfseries\raggedright}}
+
+% abstract
+\renewenvironment{abstract}{\centerline{\large\bfseries\scshape Abstract}\begin{quote}}{\end{quote}}
+
+% title block: small-caps title between two rules, authors side by side
+\newcommand{\toptitlebar}{\hrule height 2\p@ \vskip 0.25in \vskip -\parskip}
+\newcommand{\bottomtitlebar}{\vskip 0.29in \vskip -\parskip \hrule height 2\p@ \vskip 0.09in}
+% \And / \AND are defined inside \@maketitle because amsmath (loaded later) has its own \And
+\def\@maketitle{\vbox{\hsize\textwidth \linewidth\hsize \vskip 0.1in \toptitlebar \centering
+  {\LARGE\scshape\@title\par}\bottomtitlebar \vskip 0.1in
+  \def\And{\end{tabular}\hfil\linebreak[0]\hfil\begin{tabular}[t]{c}\bfseries\rule{\z@}{24\p@}\ignorespaces}%
+  \def\AND{\end{tabular}\hfil\linebreak[4]\hfil\begin{tabular}[t]{c}\bfseries\rule{\z@}{24\p@}\ignorespaces}%
+  \begin{tabular}[t]{c}\bfseries\rule{\z@}{24\p@}\@author\end{tabular}%
+  \vskip 0.3in \@minus 0.1in}}
+\renewcommand{\maketitle}{\par\begingroup\@maketitle\endgroup\thispagestyle{plain}%
+  \let\maketitle\relax\let\@maketitle\relax\gdef\@title{}\gdef\@author{}}
+
+% captions: "Figure 1: ..." with a little space
+\setlength{\abovecaptionskip}{6pt}
+\setlength{\belowcaptionskip}{4pt}
+\endinput

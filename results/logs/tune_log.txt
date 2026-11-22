@@ -1,0 +1,69 @@
+﻿2250 runs in 60 tasks on 15 workers
+  40/2250 runs  1.0 min elapsed, ~56.8 min left
+  80/2250 runs  1.1 min elapsed, ~28.5 min left
+  120/2250 runs  1.1 min elapsed, ~18.9 min left
+  160/2250 runs  1.1 min elapsed, ~14.1 min left
+  200/2250 runs  1.1 min elapsed, ~11.2 min left
+  240/2250 runs  1.1 min elapsed, ~9.1 min left
+  280/2250 runs  1.1 min elapsed, ~7.7 min left
+  320/2250 runs  1.1 min elapsed, ~6.6 min left
+  360/2250 runs  1.1 min elapsed, ~5.8 min left
+  400/2250 runs  1.1 min elapsed, ~5.1 min left
+  440/2250 runs  1.1 min elapsed, ~4.6 min left
+  480/2250 runs  1.1 min elapsed, ~4.1 min left
+  520/2250 runs  1.1 min elapsed, ~3.7 min left
+  560/2250 runs  1.1 min elapsed, ~3.4 min left
+  600/2250 runs  1.1 min elapsed, ~3.1 min left
+  640/2250 runs  2.2 min elapsed, ~5.4 min left
+  680/2250 runs  2.2 min elapsed, ~5.0 min left
+  720/2250 runs  2.2 min elapsed, ~4.7 min left
+  760/2250 runs  2.2 min elapsed, ~4.3 min left
+  800/2250 runs  2.2 min elapsed, ~4.0 min left
+  840/2250 runs  2.2 min elapsed, ~3.7 min left
+  880/2250 runs  2.2 min elapsed, ~3.5 min left
+  920/2250 runs  2.2 min elapsed, ~3.2 min left
+  960/2250 runs  2.2 min elapsed, ~3.0 min left
+  1000/2250 runs  2.3 min elapsed, ~2.8 min left
+  1040/2250 runs  2.3 min elapsed, ~2.6 min left
+  1080/2250 runs  2.3 min elapsed, ~2.5 min left
+  1120/2250 runs  2.3 min elapsed, ~2.3 min left
+  1160/2250 runs  2.3 min elapsed, ~2.2 min left
+  1200/2250 runs  2.3 min elapsed, ~2.1 min left
+  1240/2250 runs  3.4 min elapsed, ~2.8 min left
+  1280/2250 runs  3.4 min elapsed, ~2.6 min left
+  1320/2250 runs  3.4 min elapsed, ~2.4 min left
+  1360/2250 runs  3.4 min elapsed, ~2.2 min left
+  1400/2250 runs  3.5 min elapsed, ~2.1 min left
+  1440/2250 runs  3.5 min elapsed, ~1.9 min left
+  1480/2250 runs  3.5 min elapsed, ~1.8 min left
+  1520/2250 runs  3.5 min elapsed, ~1.7 min left
+  1560/2250 runs  3.5 min elapsed, ~1.5 min left
+  1600/2250 runs  3.5 min elapsed, ~1.4 min left
+  1640/2250 runs  3.5 min elapsed, ~1.3 min left
+  1680/2250 runs  3.5 min elapsed, ~1.2 min left
+  1720/2250 runs  3.5 min elapsed, ~1.1 min left
+  1760/2250 runs  3.5 min elapsed, ~1.0 min left
+  1800/2250 runs  3.6 min elapsed, ~0.9 min left
+  1825/2250 runs  4.2 min elapsed, ~1.0 min left
+  1850/2250 runs  4.3 min elapsed, ~0.9 min left
+  1875/2250 runs  4.3 min elapsed, ~0.9 min left
+  1900/2250 runs  4.3 min elapsed, ~0.8 min left
+  1925/2250 runs  4.3 min elapsed, ~0.7 min left
+  1950/2250 runs  4.3 min elapsed, ~0.7 min left
+  1975/2250 runs  4.3 min elapsed, ~0.6 min left
+  2000/2250 runs  4.3 min elapsed, ~0.5 min left
+  2025/2250 runs  4.3 min elapsed, ~0.5 min left
+  2050/2250 runs  4.4 min elapsed, ~0.4 min left
+  2090/2250 runs  4.6 min elapsed, ~0.4 min left
+  2130/2250 runs  4.6 min elapsed, ~0.3 min left
+  2170/2250 runs  4.6 min elapsed, ~0.2 min left
+  2210/2250 runs  4.6 min elapsed, ~0.1 min left
+  2250/2250 runs  4.6 min elapsed, ~0.0 min left
+L       100    200    400    800    1600
+eta                                     
+0.003  67.76  68.82  69.60  70.27  70.82
+0.010  68.16  69.21  69.97  70.60  71.12
+0.030  68.37  69.39  70.15  70.77  71.29
+0.100  68.59  69.65  70.39  70.99  71.49
+0.300  69.07  70.13  70.88  71.44  71.91
+chosen: {'eta': 0.3, 'L': 1600, 'score': 0.719077738826628}

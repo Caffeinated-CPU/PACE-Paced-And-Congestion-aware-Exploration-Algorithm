@@ -1,0 +1,26 @@
+# Rendered documents are not tracked: the report is built from report/ (see README)
+*.pdf
+*.zip
+
+# Local-only material (submission copies, old drafts, notes)
+_local/
+
+# LaTeX build products
+report/figures/
+*.log
+*.aux
+*.out
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
